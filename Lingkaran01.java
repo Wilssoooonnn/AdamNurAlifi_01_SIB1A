@@ -6,7 +6,7 @@ public class Lingkaran01 {
 
         int r;
         double luas, keliling;
-        double phi = 3.14;
+        double phi = (float) 3.14;
 
         System.out.print("Masukkan jari-jari : ");
         r = input.nextInt();
