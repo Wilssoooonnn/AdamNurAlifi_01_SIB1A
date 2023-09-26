@@ -42,7 +42,7 @@ public class PemilihanPercobaan201 {
             System.out.print("D ");
             System.out.print("Nilai 1 ");
             System.out.print("Kurang");
-        }else if (total <= 39) {
+        }else if (total <= 39 && total > 0 ) {
             System.out.print("D ");
             System.out.print("Nilai 0 ");
             System.out.print("Gagal");
