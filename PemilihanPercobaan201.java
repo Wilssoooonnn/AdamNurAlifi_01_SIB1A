@@ -14,38 +14,45 @@ public class PemilihanPercobaan201 {
         float quiz = input01.nextFloat();
         System.out.print("Nilai TUGAS : ");
         float tugas = input01.nextFloat();
+        // System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);   
 
         float total = (uas*0.4F) + (uts*0.3F) + (quiz*0.1F) + (tugas*0.2F);
-        // String message = total < 65 ? "Remedi" : "Tidak Remedi";
-        // System.out.printf("Nilai Akhir : %.2f Maka Anda %s ",total, message);   
+        String message = total < 65 ? "Remedi" : "Tidak Remedi";
         if (total > 80 && total <= 100) {
-            System.out.print("A ");
-            System.out.print("Nilai 4 ");
-            System.out.print("Sangat Baik");
+            System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);   
+            System.out.println("Nilai Huruf A ");
+            System.out.println("Nilai Angka 4 ");
+            System.out.println("Sangat Baik");
         } else if(total > 73 && total <= 80) {
-            System.out.print("B+ ");
-            System.out.print("Nilai 3.5 ");
-            System.out.print("Lebih Dari Baik");
+            System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);   
+            System.out.println("Nilai Huruf B+ ");
+            System.out.println("Nilai Angka 3.5 ");
+            System.out.println("Lebih Dari Baik");
         }else if(total > 65 && total <= 73){
-            System.out.print("B ");
-            System.out.print("Nilai 3 ");
-            System.out.print("Baik");
+            System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);   
+            System.out.println("Nilai Huruf B ");
+            System.out.println("Nilai Angka 3 ");
+            System.out.println("Baik");
         }else if(total > 60 && total <= 65){
-            System.out.print("C+ ");
-            System.out.print("Nilai 2 ");
-            System.out.print("Lebih Dari Cukup"); 
+            System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);    
+            System.out.println("Nilai Huruf C+ ");
+            System.out.println("Nilai Angka 2 ");
+            System.out.println("Lebih Dari Cukup");
         }else if(total > 50 && total <= 60){
-            System.out.print("C ");
-            System.out.print("Nilai 2 ");
-            System.out.print("Cukup");
+            System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);   
+            System.out.println("Nilai Huruf C ");
+            System.out.println("Nilai Angka 2 ");
+            System.out.println("Cukup");
         }else if (total > 39 && total <= 50) {
-            System.out.print("D ");
-            System.out.print("Nilai 1 ");
-            System.out.print("Kurang");
+            System.out.println("Nilai Huruf D ");
+            System.out.println("Nilai Angka 1 ");
+            System.out.println("Kurang");
+            System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);   
         }else if (total <= 39 && total > 0 ) {
-            System.out.print("D ");
-            System.out.print("Nilai 0 ");
-            System.out.print("Gagal");
+            System.out.printf("Nilai Akhir : %.2f Maka Anda %s \n",total, message);   
+            System.out.println("E ");
+            System.out.println("Nilai Angka 0 ");
+            System.out.println("Gagal");
         }else{
             System.out.print("Terjadi Kesalahan");
         }
