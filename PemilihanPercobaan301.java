@@ -1,15 +1,15 @@
 import java.util.Scanner;
 public class PemilihanPercobaan301 {
         public static void main(String[] args) {
-            Scanner input20 = new Scanner(System.in);
+            Scanner sc01 = new Scanner(System.in);
             double angka1, angka2, hasil;
             char operator;
             System.out.print("Masukkan angka pertama : ");
-            angka1 = input20.nextDouble();
+            angka1 = sc01.nextDouble();
             System.out.print("Masukkan angka Kedua   : ");
-            angka2 = input20.nextDouble();
+            angka2 = sc01.nextDouble();
             System.out.print("Masukkan Operator (+ - * /) : ");
-            operator = input20.next().charAt(0);
+            operator = sc01.next().charAt(0);
             switch (operator){
                 case '+' : 
                 hasil = angka1 + angka2;
